@@ -196,9 +196,10 @@ M82
 M106 S0
 M140 S60
 M190 S60
-M104 S200 T0
-M109 S200 T0
+M104 S225 T0
+M109 S225 T0
 G28 ; home all axes
+M420 V
 G1 X5 Y10 Z0.2 F3000 ; get ready to prime
 G92 E0 ; reset extrusion distance
 G1 X160 E15 F600 ; prime nozzle
@@ -206,6 +207,7 @@ G1 X180 F5000 ; quick wipe
 ; process Process1
 ; layer 1, Z = 0.240
 T0
+M420 V
 G92 E0.0000
 G1 E-6.0000 F1500
 ; feature outer perimeter
