@@ -196,8 +196,8 @@ M82
 M106 S0
 M140 S60
 M190 S60
-M104 S210 T0
-M109 S210 T0
+M104 S200 T0
+M109 S200 T0
 G28 ; home all axes
 G1 X5 Y10 Z0.2 F3000 ; get ready to prime
 G92 E0 ; reset extrusion distance
