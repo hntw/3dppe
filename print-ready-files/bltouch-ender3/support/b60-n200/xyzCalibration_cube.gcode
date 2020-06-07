@@ -194,12 +194,12 @@
 G90
 M82
 M106 S0
-M140 S60
-M190 S60
-M104 S200 T0
-M109 S200 T0
+M140 S60 ; set the bed temperature
 G28 ; home all axes
-G29 ; Probe the Bed
+M190 S60 ; wait for bed temperature
+G29 ; Mesh Generation
+M104 S200 T0 ; set the hot end temperature
+M109 S200 T0 ; wait for hot end temperature
 G1 X5 Y10 Z0.2 F3000 ; get ready to prime
 G92 E0 ; reset extrusion distance
 G1 X160 E15 F600 ; prime nozzle
